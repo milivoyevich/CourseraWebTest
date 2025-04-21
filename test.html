@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="styles.css">   
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Test Page</h1>
+        <nav>
+            <ul>
+                <li><a class="nav-item" href="#section1">About Me</a></li>
+                <li><a class="nav-item" href="#section2">Projects</a></li>
+                <li><a class="nav-item" href="#section3">Skills</a></li>
+                <li><a class="nav-item" href="#section4">Contact Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-me section" id="section1">
+            <h2>About Me</h2>
+            <p>This is About Me section of the test page.</p>
+            <img src="https://placehold.co/150/000000/FFFFFF.png" alt="Placeholder Image" class="profile-image">
+        </section>
+
+        <section class="projects section" id="section2">
+            <h2>Projects</h2>
+            <p>This is Projects section of the test page.</p>
+        </section>
+
+        <section class="skills section" id="section3">
+            <h2>Skills</h2>
+            <p>This is Skills section of the test page.</p>
+        </section> 
+
+        <section class="contact-form section" id="section4">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Test Page. All rights reserved.</p>
+    </footer>
