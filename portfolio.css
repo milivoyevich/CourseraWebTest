@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+a{
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease-in-out;
+}
+/* Page Content */
+.container {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Grid Layout */
+
+/* Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Grid Items */
+.grid-item {
+    background: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: auto;
+    padding:10px;
+    align-items: center;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background: #007BFF;
+    color: white;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+/* Footer Content */
+.footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Social Media Links */
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+    color: #007BFF;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .social-media li {
+        display: block;
+        margin: 12px 0;
+    }
+}
+
+/* Show & Hide Sections */
+section {
+    display: none; /* Initially hidden */
+    padding: 30px;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Ensures spacing */
+    padding: 10px 20px;
+    align-items: center;
+    background: #333;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center; /* Centers items */
+    flex-grow: 1; /* Allows the menu to take up space */
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: #007BFF;
+}
+
+/* Burger Menu Button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.close {
+    color: red;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        width: 25%;
+    }
+    .menu-toggle:hover{
+        background-color: transparent !important;
+    }
+    .logo{
+        width: 100%;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+}
