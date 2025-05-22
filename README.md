@@ -1,0 +1,6 @@
+- Plan & Design – Define what the modal should do (e.g., display project details). Choose a clean, accessible UI approach.
+- HTML Structure – Add a modal element to your portfolio items, ensuring each one has a corresponding modal for its details.
+- CSS Styling – Style the modal to ensure it appears properly with overlays, animations, and a user-friendly design.
+- JavaScript Functionality – Implement event listeners to open and close the modal based on user interactions.
+- Testing & Debugging – Ensure smooth functionality across different screen sizes and devices, fixing any issues.
+- Optimization – Improve performance, accessibility, and responsiveness for a polished final product
